@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="himiya.Naga"
+             BackgroundColor="#6bcffa" IconImageSource="Profil_bely.png"
+             >
+
+    <ScrollView>
+        <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical" Margin="10,5" Padding="5,5">
+            <Frame HorizontalOptions="Center" BackgroundColor="#C3BEF0" BorderColor="Aquamarine" CornerRadius="15" WidthRequest="500" Padding="15">
+                <StackLayout>
+                    <Label Text="Профиль" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"  FontSize="Title" />
+                    <Frame BorderColor="Aqua">
+                        <Image Source="photo.jpg"/>
+                    </Frame>
+                    <Label Text="ФИО:" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" FontAttributes="Bold" FontSize="22" />
+                    <Label Text="Дата рождения:" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" FontAttributes="Bold" FontSize="22" />
+                    <Label Text="E-mail:" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" FontAttributes="Bold" FontSize="22" />
+                    <Label Text="Телефон:" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" FontAttributes="Bold" FontSize="22" />
+                    <Label Text="Позиция в рейтинге:" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" FontAttributes="Bold" FontSize="22" /> 
+                </StackLayout>
+            </Frame>
+            <BoxView AnchorX="200" AnchorY="200">
+                
+            </BoxView>
+            <!-- <ContentPage.ToolbarItems> <ToolbarItem Text="Logout" Clicked="ToolbarItem_Clicked"/></ContentPage.ToolbarItems> -->
+            
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

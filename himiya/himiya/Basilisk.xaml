@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="himiya.Basilisk" BackgroundColor="#6bcffa"
+              IconImageSource="Novosti_belye.png">
+    
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"  Margin="10,5" Padding="5,5">
+            <!--позволяет располагать элементы друг под другом и друг возле друга -->
+            <StackLayout >
+                <Frame BackgroundColor="#CCA8E9" BorderColor="Aquamarine" HeightRequest="800" CornerRadius="15" >
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical">
+
+                        <Label Text="Здесь, вероятно, будут какие-нибудь описания патчноутов или другая не очень важная информация, ещё не придумал, а вот вам картинка прикольного котёнка в коробке :3" HorizontalTextAlignment="Center" TextColor="PaleGoldenrod"></Label>
+                        <Frame CornerRadius="20" HasShadow="True" >
+                            <Image Source="uV5ybeGL1P0.jng"/>
+                        </Frame>
+                    </StackLayout>
+
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
