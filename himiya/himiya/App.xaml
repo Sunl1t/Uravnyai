@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="himiya.App">
+    <Application.Resources>
+        <Thickness x:Key="PageMargin">20</Thickness>
+
+        <!-- Colors -->
+        <Color x:Key="AppPrimaryColor">#ffbafd</Color>
+        <Color x:Key="AppBackgroundColor">AliceBlue</Color>
+        <Color x:Key="PrimaryColor">Black</Color>
+        <Color x:Key="SecondaryColor">White</Color>
+        <Color x:Key="TertiaryColor">Silver</Color>
+
+        <!-- Buttons -->
+        <Style x:Key="buttonStyle" TargetType="Button">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="BackgroundColor" Value="AntiqueWhite" />
+            <Setter Property="FontFamily" Value="SFProText-Medium.ttf"/>
+            <Setter Property="BorderColor" Value="Azure"/>
+            <Setter Property="BorderWidth" Value="1"/>
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style>
+
+        <Style x:Key="InsideBtnStyle" TargetType="Button">
+            <Setter Property="TextColor" Value="Wheat" />
+            <Setter Property="BackgroundColor" Value="CadetBlue" />
+            <Setter Property="FontFamily" Value="SFProText-Medium.ttf"/>
+            <Setter Property="BorderColor" Value="Azure"/>
+            <Setter Property="BorderWidth" Value="1"/>
+            <Setter Property="CornerRadius" Value="19"/>
+            <Setter Property="WidthRequest" Value="100"/>
+        </Style>
+
+        <!-- Entry and Label style -->
+        <Style x:Key="labelStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Margin" Value="0,15"/>
+        </Style>
+        <Style x:Key="entryStyle" TargetType="Entry">
+            <Setter Property="HorizontalTextAlignment" Value="End" />
+            <Setter Property="WidthRequest" Value="28" />
+            <Setter Property="Keyboard" Value="Numeric"/>
+            <Setter Property="FontFamily" Value="SFProM"/>
+        </Style>
+        
+    </Application.Resources>
+</Application>

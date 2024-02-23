@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="himiya.Viper" BackgroundColor="#6bcffa"
+              >
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="Razdel_1_bely.png"  />
+    </ContentPage.ToolbarItems>-->
+    
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Margin="10,5" Padding="5,5">
+            <!--позволяет располагать элементы друг под другом и друг возле друга -->
+            <StackLayout >
+                <Frame HorizontalOptions="Center" BackgroundColor="#FDD9B5" BorderColor="Aquamarine" CornerRadius="15" WidthRequest="300" Padding="15">
+                    <StackLayout>
+                        <Frame HorizontalOptions="Center" BackgroundColor="#FDD9B5" BorderColor="Azure"  CornerRadius="15" WidthRequest="300">
+                            <Label FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" Text="Обычная сложность"></Label>
+                        </Frame>
+
+                        <Button Text="Задание 1" Clicked="GoToForward" Style="{StaticResource buttonStyle}"></Button>
+
+                        <Button Text="Задание 2" Clicked="GoToForward1" Style="{StaticResource buttonStyle}"></Button>
+
+                        <Button Text="Задание 3" Clicked="GoToForward1" Style="{StaticResource buttonStyle}"></Button>
+
+                        <Button Text="Задание 4" Style="{StaticResource buttonStyle}"></Button>
+
+                        <Button Text="Задание 5" Style="{StaticResource buttonStyle}"></Button>
+
+                        <Button Text="Задание 6" Style="{StaticResource buttonStyle}"></Button>
+
+                        <Button Text="Задание 7" Style="{StaticResource buttonStyle}"></Button>
+
+                        <Button Text="Задание 8" Style="{StaticResource buttonStyle}"></Button>
+
+                        <Button Text="Задание 9" Style="{StaticResource buttonStyle}"></Button>
+
+                        <Button Text="Задание 10" Style="{StaticResource buttonStyle}"></Button>
+
+                        <Button Text="Задание 11" Style="{StaticResource buttonStyle}"></Button>
+
+                        <Button Text="Задание 12" Style="{StaticResource buttonStyle}"></Button>
+
+                        <Button Text="Задание 13" Style="{StaticResource buttonStyle}"></Button>
+                    </StackLayout>
+
+                </Frame>
+                <BoxView BackgroundColor="BlanchedAlmond" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="himiya.zadanie11" BackgroundColor="#fffdf5">
+
+    <ScrollView>
+        <StackLayout>
+            <Frame BorderColor="CornflowerBlue"  BackgroundColor="#fffdf5" >
+                <Label Text="ОВР" FontSize="40" TextColor="Black"  HorizontalOptions="CenterAndExpand" />
+            </Frame>
+            <Label Text="Вставьте коэффициенты перед элементами" FontSize="15" TextColor="DimGray"  HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                <Entry x:Name="koef1" Style="{StaticResource entryStyle}" ></Entry>
+                <Label Text="Na&#x2082;SO&#x2083; + " Style="{StaticResource labelStyle}"/>
+
+                <Entry x:Name="koef2" Style="{StaticResource entryStyle}"></Entry>
+                <Label Text="KMnO&#x2084; +" Style="{StaticResource labelStyle}"/>
+
+                <Entry x:Name="koef3" Style="{StaticResource entryStyle}"></Entry>
+                <Label Text="H&#x2082;SO&#x2084;   --> " Style="{StaticResource labelStyle}"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Entry x:Name="koef4" HorizontalTextAlignment="End" WidthRequest="28" Keyboard="Numeric"></Entry>
+                <Label Text="Na&#x2082;SO&#x2084; + " TextColor="Black" FontSize="18" Margin="0,15"/>
+
+                <Entry x:Name="koef5" HorizontalTextAlignment="End" WidthRequest="28" Keyboard="Numeric"></Entry>
+                <Label Text="MnSO&#x2084; + " TextColor="Black" FontSize="18" Margin="0,15"/>
+
+                <Entry x:Name="koef6" HorizontalTextAlignment="End" WidthRequest="28" Keyboard="Numeric"></Entry>
+                <Label Text="K&#x2082;SO&#x2084; + " TextColor="Black" FontSize="18" Margin="0,15"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Entry x:Name="koef7" HorizontalTextAlignment="End" WidthRequest="28" Keyboard="Numeric"></Entry>
+                <Label Text="H&#x2082;O" TextColor="Black" FontSize="18" Margin="0,15"/>
+            </StackLayout>
+            
+            <BoxView Margin="5,10,5,10">
+
+            </BoxView>
+            <ContentView>
+                <Button Text="Отправить" Style="{StaticResource InsideBtnStyle}" Clicked="ButtonClick"></Button>
+            </ContentView>
+
+            <Label x:Name="ErrorB" Text="" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Следующее задание" Style="{StaticResource InsideBtnStyle}" Clicked="GoToForvard"></Button>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

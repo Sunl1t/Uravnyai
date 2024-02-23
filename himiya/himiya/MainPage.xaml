@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:himiya;assembly=himiya"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+     
+             x:Class="himiya.MainPage"
+             BarBackgroundColor="#dbf7ff"  BarTextColor="Black" android:TabbedPage.IsSmoothScrollEnabled="True" >
+
+    <!--<ShellItem Route="LoginPage" FlyoutItemIsVisible="False"> <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"/> </ShellItem> добавлено-->
+    <local:Basilisk />
+
+    <local:Viper />
+
+    <local:Cobra/>
+
+    <local:DeathAdder/>
+
+    <local:Naga/>
+
+</TabbedPage>
+<!--android:TabbedPage.ToolbarPlacement="Bottom" для перенесения вкладок вниз (не работает) -->
+    
