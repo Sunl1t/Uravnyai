@@ -1,12 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="himiya.zadanie44">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="himiya.zadanie44" BackgroundColor="#fffdf5">
+    <ScrollView>
+        <StackLayout >
+            <Frame BorderColor="CornflowerBlue"  BackgroundColor="#fffdf5" >
+                <Label Text="ОВР" FontSize="40" TextColor="Black"  HorizontalOptions="CenterAndExpand" />
+            </Frame>
+            <Label Text="Вставьте коэффициенты перед элементами" FontSize="15" TextColor="DimGray"  HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                <Entry x:Name="koef1" Style="{StaticResource entryStyle}"></Entry>
+                <Label Text="KNO&#x2082; +" Style="{StaticResource labelStyle}"/>
+
+                <Entry x:Name="koef2" Style="{StaticResource entryStyle}"></Entry>
+                <Label Text="KMnO&#x2084; + " Style="{StaticResource labelStyle}"/>
+
+                <Entry x:Name="koef3" Style="{StaticResource entryStyle}"></Entry>
+                <Label Text="H&#x2082;O  &lt;--> " Style="{StaticResource labelStyle}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Entry x:Name="koef4" Style="{StaticResource entryStyle}"></Entry>
+                <Label Text="KNO&#x2083; + " Style="{StaticResource labelStyle}"/>
+
+                <Entry x:Name="koef5" Style="{StaticResource entryStyle}"></Entry>
+                <Label Text="MnO&#x2082; + " Style="{StaticResource labelStyle}"/>
+
+                <Entry x:Name="koef6" Style="{StaticResource entryStyle}"></Entry>
+                <Label Text="KOH" Style="{StaticResource labelStyle}"/>
+            </StackLayout>
+
+            <BoxView  Margin="5,10,5,10"></BoxView>
+            <ContentView>
+                <Button Text="Отправить" Style="{StaticResource InsideBtnStyle}" Clicked="ButtonClick1"></Button>
+            </ContentView>
+
+            <Label x:Name="ErrorB" Text="" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Меню" Style="{StaticResource InsideBtnStyle}" Clicked="GoToMenu"></Button>
+            <Button Text="Следующее задание" Style="{StaticResource InsideBtnStyle}" Clicked="GoToForvard3"></Button>
         </StackLayout>
-    </ContentPage.Content>
+
+    </ScrollView>
 </ContentPage>

@@ -19,18 +19,21 @@ namespace himiya
             Button backBtn = new Button { Text = "Назад" };
             backBtn.Clicked += GoToBack;
         }
-        private async void GoToForvard(object sender, EventArgs e)
+        private async void GoToForward7(object sender, EventArgs e)
         {
-            zadanie2 page = new zadanie2();
+            zadanie8 page = new zadanie8();
             await Navigation.PushAsync(page);
-            page.DisplayStack1();
+            page.DisplayStack7();
         }
 
-        protected internal void DisplayStack()
+        protected internal void DisplayStack6()
         {
             NavigationPage navPage = (NavigationPage)App.Current.MainPage;
         }
-
+        async void GoToMenu(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+        }
 
         private async void GoToBack(object sender, EventArgs e)
         {
@@ -42,7 +45,7 @@ namespace himiya
 
         private void ButtonClick7(object sender, EventArgs e)
         {
-            if ((string.IsNullOrEmpty(koef1.Text) || (koef1.Text == "1")) & (koef2.Text == "2") & (string.IsNullOrEmpty(koef3.Text) || (koef3.Text == "1")) & (koef4.Text == "2")) //понадобится, когда буду прописывать пустые коэфы
+            if ((koef1.Text == "2") & (koef2.Text == "9") & (koef3.Text == "6") & (koef4.Text == "6")) //понадобится, когда буду прописывать пустые коэфы
             {
                 ErrorA.TextColor = Color.Green;
                 ErrorA.Text = "Отлично, молодец!";

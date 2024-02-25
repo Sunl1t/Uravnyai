@@ -27,7 +27,7 @@
             </ContentView>
 
             <Label x:Name="ErrorA" Text="" FontSize="20" HorizontalOptions="CenterAndExpand"/>
-            <Button Text="Следующее задание" Style="{StaticResource InsideBtnStyle}" Clicked="GoToForvard"></Button>
+            <Button Text="Следующее задание" Style="{StaticResource InsideBtnStyle}" Clicked="GoToForward1"></Button>
         </StackLayout>
         
     </ScrollView>

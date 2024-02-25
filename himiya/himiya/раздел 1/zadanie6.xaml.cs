@@ -20,19 +20,17 @@ namespace himiya
             backBtn.Clicked += GoToBack;
         }
 
-        private async void GoToForvard(object sender, EventArgs e)
-        {
-            zadanie2 page = new zadanie2();
-            await Navigation.PushAsync(page);
-            page.DisplayStack1();
-        }
-
-        protected internal void DisplayStack()
+        protected internal void DisplayStack5()
         {
             NavigationPage navPage = (NavigationPage)App.Current.MainPage;
         }
 
-
+        private async void GoToForward6(object sender, EventArgs e)
+        {
+            zadanie7 page = new zadanie7();
+            await Navigation.PushAsync(page);
+            page.DisplayStack6();
+        }
         private async void GoToBack(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
@@ -40,10 +38,13 @@ namespace himiya
             NavigationPage navPage = (NavigationPage)App.Current.MainPage;
             ((Viper)navPage.CurrentPage).DisplayStack();
         }
-
+        async void GoToMenu(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+        }
         private void ButtonClick6(object sender, EventArgs e)
         {
-            if ((string.IsNullOrEmpty(koef1.Text) || (koef1.Text == "1")) & (koef2.Text == "2") & (string.IsNullOrEmpty(koef3.Text) || (koef3.Text == "1")) & (koef4.Text == "2")) //понадобится, когда буду прописывать пустые коэфы
+            if ((koef1.Text == "4") & (string.IsNullOrEmpty(koef2.Text) || (koef2.Text == "1")) & (koef3.Text == "2")) 
             {
                 ErrorA.TextColor = Color.Green;
                 ErrorA.Text = "Отлично, молодец!";

@@ -20,19 +20,24 @@ namespace himiya
             backBtn.Clicked += GoToBack;
         }
 
-        private async void GoToForvard(object sender, EventArgs e)
+        private async void GoToForward5(object sender, EventArgs e)
         {
-            zadanie2 page = new zadanie2();
+            zadanie6 page = new zadanie6();
             await Navigation.PushAsync(page);
-            page.DisplayStack1();
+            page.DisplayStack5();
         }
 
-        protected internal void DisplayStack()
+        protected internal void DisplayStack4()
         {
             NavigationPage navPage = (NavigationPage)App.Current.MainPage;
         }
 
-
+        private async void GoToForvard5(object sender, EventArgs e)
+        {
+            zadanie5 page = new zadanie5();
+            await Navigation.PushAsync(page);
+            page.DisplayStack4();
+        }
         private async void GoToBack(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
@@ -40,10 +45,13 @@ namespace himiya
             NavigationPage navPage = (NavigationPage)App.Current.MainPage;
             ((Viper)navPage.CurrentPage).DisplayStack();
         }
-
+        async void GoToMenu(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+        }
         private void ButtonClick5(object sender, EventArgs e)
         {
-            if ((string.IsNullOrEmpty(koef1.Text) || (koef1.Text == "1")) & (koef2.Text == "2") & (string.IsNullOrEmpty(koef3.Text) || (koef3.Text == "1")) & (koef4.Text == "2")) //понадобится, когда буду прописывать пустые коэфы
+            if (koef1.Text == "4" & (koef2.Text == "5") & koef3.Text == "2") //понадобится, когда буду прописывать пустые коэфы
             {
                 ErrorA.TextColor = Color.Green;
                 ErrorA.Text = "Отлично, молодец!";

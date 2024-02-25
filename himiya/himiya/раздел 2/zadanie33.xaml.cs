@@ -25,7 +25,7 @@ namespace himiya
             await Navigation.PopToRootAsync();
         }
 
-        protected internal void DisplayStack1()
+        protected internal void DisplayStack2()
         {
             NavigationPage navPage = (NavigationPage)App.Current.MainPage;
 

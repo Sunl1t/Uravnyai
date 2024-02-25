@@ -17,23 +17,26 @@ namespace himiya
             InitializeComponent();
             Title = "Задание 8";
             Button backBtn = new Button { Text = "Назад" };
-            backBtn.Clicked += GoToBack;
+            backBtn.Clicked += GoToBack8;
         }
 
-        private async void GoToForvard(object sender, EventArgs e)
+/*        private async void GoToForward8(object sender, EventArgs e)
         {
-            zadanie2 page = new zadanie2();
+            zadanie8 page = new zadanie8();
             await Navigation.PushAsync(page);
-            page.DisplayStack1();
-        }
+            page.DisplayStack7();
+        }*/
 
-        protected internal void DisplayStack()
+        protected internal void DisplayStack7()
         {
             NavigationPage navPage = (NavigationPage)App.Current.MainPage;
         }
+        async void GoToMenu(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+        }
 
-
-        private async void GoToBack(object sender, EventArgs e)
+        private async void GoToBack8(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
 
@@ -41,9 +44,13 @@ namespace himiya
             ((Viper)navPage.CurrentPage).DisplayStack();
         }
 
+        /*async void GoToMenu(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+        }*/
         private void ButtonClick8(object sender, EventArgs e)
         {
-            if ((string.IsNullOrEmpty(koef1.Text) || (koef1.Text == "1")) & (koef2.Text == "2") & (string.IsNullOrEmpty(koef3.Text) || (koef3.Text == "1")) & (koef4.Text == "2")) //понадобится, когда буду прописывать пустые коэфы
+            if ((koef1.Text == "2") & (koef2.Text == "3") & (koef3.Text == "2") & (koef4.Text == "2")) 
             {
                 ErrorA.TextColor = Color.Green;
                 ErrorA.Text = "Отлично, молодец!";

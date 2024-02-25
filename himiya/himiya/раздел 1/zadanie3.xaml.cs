@@ -20,14 +20,14 @@ namespace himiya
             backBtn.Clicked += GoToBack;
         }
 
-        private async void GoToForvard2(object sender, EventArgs e)
+        private async void GoToForward3(object sender, EventArgs e)
         {
-            zadanie3 page = new zadanie3();
+            zadanie4 page = new zadanie4();
             await Navigation.PushAsync(page);
-            page.DisplayStack1();
+            page.DisplayStack3();
         }
 
-        protected internal void DisplayStack1()
+        protected internal void DisplayStack2()
         {
             NavigationPage navPage = (NavigationPage)App.Current.MainPage;
         }
@@ -42,6 +42,7 @@ namespace himiya
         {
             await Navigation.PopToRootAsync();
         }
+
         private void ButtonClick(object sender, EventArgs e)
         {
             if ((string.IsNullOrEmpty(koef2.Text) | koef2.Text == "1") & koef1.Text == "2" & (string.IsNullOrEmpty(koef3.Text) | koef3.Text == "1") & (string.IsNullOrEmpty(koef4.Text) | koef4.Text == "1"))

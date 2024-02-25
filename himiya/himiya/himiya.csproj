@@ -36,7 +36,7 @@
     <EmbeddedResource Update="Basilisk.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Cobra.xaml">
+    <EmbeddedResource Update="раздел 2\Cobra.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="DeathAdder.xaml">
@@ -90,7 +90,7 @@
     <EmbeddedResource Update="раздел 0\RegistrationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Viper.xaml">
+    <EmbeddedResource Update="раздел 1\Viper.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="раздел 2\zadanie11.xaml">

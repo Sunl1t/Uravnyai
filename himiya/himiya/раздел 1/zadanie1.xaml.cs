@@ -32,18 +32,17 @@ namespace himiya
             backBtn.Clicked += GoToBack;
         }
 
-        private async void GoToForvard(object sender, EventArgs e)
-        {
-            zadanie2 page = new zadanie2();
-            await Navigation.PushAsync(page);
-            page.DisplayStack1();
-        }
 
         protected internal void DisplayStack()
         {
             NavigationPage navPage = (NavigationPage)App.Current.MainPage;
         }
-
+        private async void GoToForward1(object sender, EventArgs e)
+        {
+            zadanie2 page = new zadanie2();
+            await Navigation.PushAsync(page);
+            page.DisplayStack1();
+        }
 
         private async void GoToBack(object sender, EventArgs e)
         {

@@ -21,17 +21,17 @@
 
                         <Button Text="Задание 2" Clicked="GoToForward1" Style="{StaticResource buttonStyle}"></Button>
 
-                        <Button Text="Задание 3" Clicked="GoToForward1" Style="{StaticResource buttonStyle}"></Button>
+                        <Button Text="Задание 3" Clicked="GoToForward2" Style="{StaticResource buttonStyle}"></Button>
 
-                        <Button Text="Задание 4" Style="{StaticResource buttonStyle}"></Button>
+                        <Button Text="Задание 4" Clicked="GoToForward3" Style="{StaticResource buttonStyle}"></Button>
 
-                        <Button Text="Задание 5" Style="{StaticResource buttonStyle}"></Button>
+                        <Button Text="Задание 5" Clicked="GoToForward4" Style="{StaticResource buttonStyle}"></Button>
 
-                        <Button Text="Задание 6" Style="{StaticResource buttonStyle}"></Button>
+                        <Button Text="Задание 6" Clicked="GoToForward5" Style="{StaticResource buttonStyle}"></Button>
 
-                        <Button Text="Задание 7" Style="{StaticResource buttonStyle}"></Button>
+                        <Button Text="Задание 7" Clicked="GoToForward6" Style="{StaticResource buttonStyle}"></Button>
 
-                        <Button Text="Задание 8" Style="{StaticResource buttonStyle}"></Button>
+                        <Button Text="Задание 8" Clicked="GoToForward7" Style="{StaticResource buttonStyle}"></Button>
 
                         <Button Text="Задание 9" Style="{StaticResource buttonStyle}"></Button>
 

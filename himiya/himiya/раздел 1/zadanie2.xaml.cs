@@ -30,10 +30,18 @@ namespace himiya
             NavigationPage navPage = (NavigationPage)App.Current.MainPage;
             ((Viper)navPage.CurrentPage).DisplayStack1();
         }
-        /*async void GoToMenu(object sender, EventArgs e)
+
+        private async void GoToForward2(object sender, EventArgs e)
+        {
+            zadanie3 page = new zadanie3();
+            await Navigation.PushAsync(page);
+            page.DisplayStack2();
+        }
+
+        async void GoToMenu(object sender, EventArgs e)
         {
             await Navigation.PopToRootAsync();
-        }*/
+        }
         private void ButtonClick(object sender, EventArgs e)
         {
             if ((string.IsNullOrEmpty(koef2.Text) | koef2.Text == "1") & koef1.Text == "2" & (string.IsNullOrEmpty(koef3.Text) | koef3.Text == "1") & (string.IsNullOrEmpty(koef4.Text) | koef4.Text == "1"))

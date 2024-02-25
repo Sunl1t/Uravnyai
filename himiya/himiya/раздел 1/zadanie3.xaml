@@ -11,19 +11,16 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
 
                 <Entry x:Name="koef1" Style="{StaticResource entryStyle}"></Entry>
-                <Label Text="NO&#x2082; +" Style="{StaticResource labelStyle}"/>
+                <Label Text="KMnO&#x2084;  -->" Style="{StaticResource labelStyle}"/>
 
                 <Entry x:Name="koef2" Style="{StaticResource entryStyle}"></Entry>
-                <Label Text="H&#x2082;O  -->" Style="{StaticResource labelStyle}"/>
+                <Label Text="K&#x2082;MnO&#x2084; + " Style="{StaticResource labelStyle}"/>
 
                 <Entry x:Name="koef3" Style="{StaticResource entryStyle}"></Entry>
-                <Label Text="HNO&#x2082; + " Style="{StaticResource labelStyle}"/>
+                <Label Text="MnO&#x2082; + " Style="{StaticResource labelStyle}"/>
 
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-
-                <Entry x:Name="koef4" HorizontalTextAlignment="End" WidthRequest="28" Keyboard="Numeric"></Entry>
-                <Label Text="HNO&#x2083;" TextColor="Black" FontSize="18" Margin="0,15"/>
+                <Entry x:Name="koef4" Style="{StaticResource entryStyle}"></Entry>
+                <Label Text="O&#x2082;" Style="{StaticResource labelStyle}"/>
 
             </StackLayout>
             <BoxView Margin="5,10,5,10">
@@ -34,6 +31,7 @@
             </ContentView>
 
             <Label x:Name="ErrorB" Text="" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Следующее задание" Style="{StaticResource InsideBtnStyle}" Clicked="GoToForward3"></Button>
             <Button Text="Меню" Style="{StaticResource InsideBtnStyle}" Clicked="GoToMenu" />
         </StackLayout>
 

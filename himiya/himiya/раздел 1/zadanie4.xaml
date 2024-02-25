@@ -10,13 +10,11 @@
             <Label Text="Вставьте коэффициенты перед элементами" FontSize="15" TextColor="DimGray"  HorizontalOptions="CenterAndExpand" />
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                 <Entry x:Name="koef1" Style="{StaticResource entryStyle}"></Entry>
-                <Label Text="CH&#x2084; + " Style="{StaticResource labelStyle}"/>
+                <Label Text="Al + " Style="{StaticResource labelStyle}"/>
                 <Entry x:Name="koef2" Style="{StaticResource entryStyle}"></Entry>
                 <Label Text="O&#x2082;  -->" Style="{StaticResource labelStyle}"/>
                 <Entry x:Name="koef3" Style="{StaticResource entryStyle}"></Entry>
-                <Label Text="CO&#x2082; + " Style="{StaticResource labelStyle}"/>
-                <Entry x:Name="koef4" Style="{StaticResource entryStyle}"></Entry>
-                <Label Text="H&#x2082;O" Style="{StaticResource labelStyle}"/>
+                <Label Text="Al&#x2082;O&#x2083;" Style="{StaticResource labelStyle}"/>
             </StackLayout>
             <BoxView   Margin="5,10,5,10">
 
@@ -26,7 +24,8 @@
             </ContentView>
 
             <Label x:Name="ErrorA" Text="" FontSize="20" HorizontalOptions="CenterAndExpand"/>
-            <Button Text="Следующее задание" Style="{StaticResource InsideBtnStyle}" Clicked="GoToForvard"></Button>
+            <Button Text="Следующее задание" Style="{StaticResource InsideBtnStyle}" Clicked="GoToForward4"></Button>
+            <Button Text="Меню" Style="{StaticResource InsideBtnStyle}" Clicked="GoToMenu" />
         </StackLayout>
 
     </ScrollView>
