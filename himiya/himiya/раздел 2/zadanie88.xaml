@@ -41,11 +41,11 @@
 
             </BoxView>
             <ContentView>
-                <Button Text="Отправить" Style="{StaticResource InsideBtnStyle}" Clicked="ButtonClick"></Button>
+                <Button Text="Отправить" Style="{StaticResource InsideBtnStyle}" Clicked="ButtonClick1"></Button>
             </ContentView>
 
             <Label x:Name="ErrorB" Text="" FontSize="20" HorizontalOptions="CenterAndExpand"/>
-            <Button Text="Следующее задание" Style="{StaticResource InsideBtnStyle}" Clicked="GoToForvard7"></Button>
+            <Button Text="Следующее задание" Style="{StaticResource InsideBtnStyle}"></Button>
         </StackLayout>
 
     </ScrollView>

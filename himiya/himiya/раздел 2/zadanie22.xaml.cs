@@ -37,7 +37,12 @@ namespace himiya
             NavigationPage navPage = (NavigationPage)App.Current.MainPage;
             ((Cobra)navPage.CurrentPage).DisplayStack();
         }
-
+        private async void GoToForward1(object sender, EventArgs e)
+        {
+            zadanie33 page = new zadanie33();
+            await Navigation.PushAsync(page);
+            page.DisplayStack2();
+        }
         private void ButtonClick1(object sender, EventArgs e)
         {
             if ((koef1.Text == "3") & (koef2.Text == "2") & (string.IsNullOrEmpty(koef3.Text) | (koef3.Text == "1")) & (koef4.Text == "3") & (koef5.Text == "2") & (koef6.Text == "2"))

@@ -37,7 +37,7 @@
 
             <Label x:Name="ErrorB" Text="" FontSize="20" HorizontalOptions="CenterAndExpand"/>
             <Button Text="Меню" Style="{StaticResource InsideBtnStyle}" Clicked="GoToMenu"></Button>
-            <Button Text="Следующее задание" Style="{StaticResource InsideBtnStyle}" Clicked="GoToForvard3"></Button>
+            <Button Text="Следующее задание" Style="{StaticResource InsideBtnStyle}" Clicked="GoToForward3"></Button>
         </StackLayout>
 
     </ScrollView>

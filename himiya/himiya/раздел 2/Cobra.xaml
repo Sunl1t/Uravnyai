@@ -14,31 +14,31 @@
                             <Frame HorizontalOptions="Center" BackgroundColor="#FDD9B5" BorderColor="Azure"  CornerRadius="15" WidthRequest="300">
                                 <Label FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" Text="Средняя сложность"></Label>
                             </Frame>
-                            <Button Text="Задание 1" Clicked="GoToForward"  Style="{StaticResource buttonStyle}"></Button>
+                            <Button Text="Задание 1" Clicked="GoToPage"  Style="{StaticResource buttonStyle}"></Button>
 
-                            <Button Text="Задание 2" Clicked="GoToForward1"  Style="{StaticResource buttonStyle}"></Button>
+                            <Button Text="Задание 2" Clicked="GoToPage1"  Style="{StaticResource buttonStyle}"></Button>
 
-                            <Button Text="Задание 3" Style="{StaticResource buttonStyle}"></Button>
+                            <Button Text="Задание 3" Clicked="GoToPage2" Style="{StaticResource buttonStyle}"></Button>
 
-                            <Button Text="Задание 4" Style="{StaticResource buttonStyle}"></Button>
+                            <Button Text="Задание 4" Clicked="GoToPage3" Style="{StaticResource buttonStyle}"></Button>
 
-                            <Button Text="Задание 5" Style="{StaticResource buttonStyle}"></Button>
+                            <Button Text="Задание 5" Clicked="GoToPage4" Style="{StaticResource buttonStyle}"></Button>
 
-                            <Button Text="Задание 6" Style="{StaticResource buttonStyle}"></Button>
+                            <Button Text="Задание 6" Clicked="GoToPage5" Style="{StaticResource buttonStyle}"></Button>
 
-                            <Button Text="Задание 7" Style="{StaticResource buttonStyle}"></Button>
+                            <Button Text="Задание 7" Clicked="GoToPage6" Style="{StaticResource buttonStyle}"></Button>
 
-                            <Button Text="Задание 8" Style="{StaticResource buttonStyle}"></Button>
+                            <Button Text="Задание 8" Clicked="GoToPage7" Style="{StaticResource buttonStyle}"></Button>
 
-                            <Button Text="Задание 9" Style="{StaticResource buttonStyle}"></Button>
+                            <Button Text="Задание 9" Clicked="GoToPage1" Style="{StaticResource buttonStyle}"></Button>
 
-                            <Button Text="Задание 10" Style="{StaticResource buttonStyle}"></Button>
+                            <Button Text="Задание 10" Clicked="GoToPage1" Style="{StaticResource buttonStyle}"></Button>
 
-                            <Button Text="Задание 11" Style="{StaticResource buttonStyle}"></Button>
+                            <Button Text="Задание 11" Clicked="GoToPage1" Style="{StaticResource buttonStyle}"></Button>
 
-                            <Button Text="Задание 12" Style="{StaticResource buttonStyle}"></Button>
+                            <Button Text="Задание 12" Clicked="GoToPage1" Style="{StaticResource buttonStyle}"></Button>
 
-                            <Button Text="Задание 13" Style="{StaticResource buttonStyle}"></Button>
+                            <Button Text="Задание 13" Clicked="GoToPage1" Style="{StaticResource buttonStyle}"></Button>
 
                         </StackLayout>
 

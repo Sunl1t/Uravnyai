@@ -24,7 +24,7 @@ namespace himiya
             NavigationPage navPage = (NavigationPage)App.Current.MainPage;
 
         }
-        private async void GoToForvard(object sender, EventArgs e)
+        private async void GoToForward(object sender, EventArgs e)
         {
             zadanie22 page = new zadanie22();
             await Navigation.PushAsync(page);

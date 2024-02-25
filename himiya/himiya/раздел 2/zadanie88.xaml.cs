@@ -29,7 +29,12 @@ namespace himiya
             NavigationPage navPage = (NavigationPage)App.Current.MainPage;
 
         }
-
+        /*private async void GoToForward7(object sender, EventArgs e)
+        {
+            zadanie99 page = new zadanie99();
+            await Navigation.PushAsync(page);
+            page.DisplayStack8();
+        }*/
         private async void GoToBack1(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
